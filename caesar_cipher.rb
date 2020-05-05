@@ -1,9 +1,3 @@
-print "Type a phrase you wish to encrypt: "
-phrase = gets.chomp
-
-print "Enter a number for the shift factor: "
-shift_factor = gets.chomp.to_i
-
 def encrypt(phrase, shift_factor)
   final = ""
 
@@ -29,5 +23,12 @@ def encrypt(phrase, shift_factor)
   end
   return final
 end
+
+
+print "Type a phrase you wish to encrypt: "
+phrase = gets.chomp
+
+print "Enter a number for the shift factor: "
+shift_factor = gets.chomp
 
 puts encrypt(phrase, shift_factor)
